@@ -1,0 +1,32 @@
+# Segreti
+.env
+*.local.*
+
+# Dati scaricati dagli export (possono contenere dati sensibili)
+connettori/export/**/dati/
+
+# Dati dell'azienda: conoscenza, memoria, decisioni e progetti.
+# Restano fuori da git per non pubblicarli per sbaglio (per esempio su un repository pubblico).
+# I README e i file modello restano inclusi, così la struttura del brain si vede sempre.
+# Se vuoi salvare il brain in un repository PRIVATO, puoi cancellare questo blocco.
+knowledge_base/**
+!knowledge_base/**/
+!knowledge_base/**/README.md
+!knowledge_base/INDEX.md
+memoria/**
+!memoria/README.md
+!memoria/sessioni.md
+archivio/**
+!archivio/**/
+!archivio/**/README.md
+progetti/**
+!progetti/README.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
